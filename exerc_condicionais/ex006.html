@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+        <!-- 6) Faça um Programa que leia três números e mostre o menor deles.-->
+        ''
+        Digite primeiro numero <input type="number" id="txt1" placeholder="Digite aqui"><br>
+        Digite segundo numero <input type="number" id="txt2" placeholder="Digite aqui"><br>
+        Digite terceiro numero <input type="number" id="txt3" placeholder="Digite aqui"><br>
+        <button type="button" onclick="menor()">Verificar</button>
+
+        <div id="res"></div>
+
+            <script>
+                        function menor () {
+
+        var tx1 = document.getElementById('txt1')
+        var tx2 = document.getElementById('txt2')
+        var tx3 = document.getElementById('txt3')
+        var n1 = Number(tx1.value)
+        var n2 = Number(tx2.value)
+        var n3 = Number(tx3.value)
+
+        if(n1 < n2 && n3) {
+
+                res.innerHTML = `numero ${n1} é menor que ${n2} e ${n3}`
+        }
+        else
+            if(n2 < n3 && n1) {
+
+                res.innerHTML = `numero ${n2} é menor que ${n1} e ${n3}`
+            }
+            
+            else {
+                res.innerHTML = `numero ${n3} é menor que ${n1} e ${n2} `
+        }
+
+
+        }
+
+
+</script>
+    </script>
+
+
+</body>
+</html>

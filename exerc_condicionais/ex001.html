@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprima o maior numero</title>
+
+    <style>
+        body {
+            font-size: 40px;
+            background: cadetblue;
+            color: #fff;
+            line-height: 100px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+<!--
+    1) Faça um Programa que peça dois números e imprima o maior deles.
+-->
+<h1>Saber qual o numero é maior</h1>
+
+Digite o primeiro numero <input type="number" id="txt1" placeholder="Digite um numero"><br>
+
+Digite o sengundo numero <input type="number" id="txt2" placeholder="Digite um numero"><br>
+
+<button type="button" onclick="verificar()">Verificar </button>
+
+<div id="res"></div>
+
+<script>
+
+function verificar() {
+
+    var tn1 = document.getElementById('txt1')
+    var tn2 = document.getElementById('txt2')
+    var  n1 = Number(tn1.value)
+    var  n2 = Number(tn2.value)
+
+    if(n1 > n2) {
+
+        res.innerHTML = `numero ${n1} é maior`;
+    }
+
+    else 
+        if (n2 > n1) {
+        res.innerHTML = `numero ${n2} é maior`;
+    }
+
+    else {
+        
+        res.innerHTML = `Numeros digitados são iguais!`
+    }
+    
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

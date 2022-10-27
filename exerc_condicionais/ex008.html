@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular média</title>
+
+    <style>
+            * {
+                margin: 0;
+                padding:0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background: rgb(168, 203, 214);
+                color: aliceblue;
+                font-size: 20pt;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 200px;
+            }
+
+            .conteiner {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                border: 1px solid black;
+                border-radius: 10px;
+                width: 500px;
+                height: 400px;
+                background-color: rgb(151, 176, 223);
+            }
+
+            .nota-1 {
+                margin-right: 50px;
+            }
+
+            .nota-2 {
+                margin-right: 50px;
+            }
+
+
+            button, input {
+                margin-top: 20px;
+                height: 20px;
+            }
+
+            #med {
+                padding: 15px;
+                margin-top: 50px;
+
+            }
+
+    </style>
+
+</head>
+
+
+
+<body>
+    
+
+<!--8) Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+   a) A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+   b) A mensagem "Reprovado", se a média for menor do que sete;
+   c) A mensagem "Aprovado com Distinção", se a média for igual a dez. -->
+
+                <div class="conteiner">
+
+                    <div class="nota-1">
+                        <label for="nota1"> Primeira nota </label>
+                        <input type="number" name="nota1" id="txt1" placeholder="Digite aqui">
+                    </div>
+
+                    <div class="nota-2">
+                        <label for="nota2"> segunda nota </label>
+                        <input type="number" for="nota2" id="txt2" placeholder="Digite aqui">
+                    </div>
+
+
+                    <button type="button" onclick="media()">Calcular</button>
+
+                    <div id="med"></div>
+
+                </div>
+
+
+            <script>
+
+                function media() {
+                var num1 = document.getElementById('txt1')
+                var num2 = document.getElementById('txt2')
+                var n1 = Number(num1.value)
+                var n2 = Number(num2.value)
+
+                var calMedia = (n1 + n2) / 2;
+        
+                if (calMedia == 10) {
+                    med.innerHTML = `Aluno APROVADO com DISTINÇÃO, mpedia ${calMedia}`
+                    
+                }
+                else if(calMedia >=7) {
+                       
+                        med.innerHTML = `Aluno APROVADO com média ${calMedia}`
+                    }
+
+                else {
+                    med.innerHTML = `Aluno REPROVADO com média ${calMedia}`
+                }
+
+            }
+
+            </script>
+
+
+   
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se o valor é positivo ou negativo</title>
+
+    <style>
+        body {
+            background: pink;
+            color: rgb(48, 151, 151);
+            line-height: 5em;
+            text-align: center;
+            justify-content: center;
+            font-size: 40pt;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        <h1>2) Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo
+    -->
+
+    Digite um valor <input type="number" id="txt1">
+
+    <button type="button" value="valor" onclick="valor()">Verificar</button>
+
+    <div id="res"></div>
+
+    <script>
+      function valor() {
+
+            var num = document.getElementById('txt1')
+            var n1 = Number(num.value)
+
+            if (n1 >= 0) {
+
+                res.innerHTML = `Numero ${n1} é POSITIVO!!!!!!`
+            }
+
+            else {
+                    res.innerHTML = `Numero ${n1} é NEGATIVOOOO!!!!!` 
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+</body>
+</html>
